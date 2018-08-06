@@ -1,0 +1,17 @@
+//modificar en sails archivo datasource
+//añadir la instancia  // datastore: 'mysql'
+//añadir el    migrate: 'alter', en el archivo models.js
+
+
+
+//para angular modificar los cors
+/*cors: {
+     allRoutes: false,
+     allowOrigins: '*',
+     allowCredentials: false,
+   },
+
+*/
+
+create database proyectoJavascript;
+use proyectoJavascript;
