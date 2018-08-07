@@ -10,27 +10,29 @@ module.exports = {
    // npm install request --save
     const request = require('request');
     console.log('Enviar datos');
-    var str='';
-    if(req.body.name.localeCompare('alarma'))
+    var str='alarmaI';
+
+   if(req.body.nombre.localeCompare('alarma')==0)
     {
       str='alarmaI';
-    }if(req.body.name.localeCompare('luz'))
+    }if(req.body.nombre.localeCompare('luz')==0)
     {
       str='luzI';
-    }if(req.body.name.localeCompare('puerta'))
+    }if(req.body.nombre.localeCompare('puerta')==0)
     {
       str='puertaI';
     }
-    console.log('El valor de str es',str);
+
       const objetoRequest = {
 
-        url: 'http://192.168.43.195:1337/'+str,
+        url: 'http://192.168.1.9:1337/'+str,
         form: {
           nombre: req.body.nombre,
           accion: req.body.accion,
 
         }
       };
+    console.log('el valor de el body2 es :',req.body.nombre);
     const objetoRequest1 = {
       url: 'http://localhost:1338/control',
       form: {
