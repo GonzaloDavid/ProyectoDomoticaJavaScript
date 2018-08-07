@@ -25,19 +25,21 @@ module.exports = {
 
       const objetoRequest = {
 
-        url: 'http://192.168.1.9:1337/'+str,
+        url: 'http://192.168.1.5:1339/'+str,
         form: {
           nombre: req.body.nombre,
           accion: req.body.accion,
 
         }
       };
-    console.log('el valor de el body2 es :',req.body.nombre);
+
     const objetoRequest1 = {
       url: 'http://localhost:1338/control',
       form: {
         nombre: req.body.nombre,
         accion: req.body.accion,
+        fecha: req.body.fecha,
+        owner: req.body.owner,
 
       }
     };

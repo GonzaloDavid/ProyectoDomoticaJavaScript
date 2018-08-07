@@ -10,7 +10,9 @@ module.exports = {
   attributes: {
 
     nombre: {type: 'string', required: true},
-    accion: {type: 'string', required: true}
+    accion: {type: 'string', required: true},
+    fecha: {type: 'string', required: true},
+    owner: { model: 'Usuario'}
 
   },
 

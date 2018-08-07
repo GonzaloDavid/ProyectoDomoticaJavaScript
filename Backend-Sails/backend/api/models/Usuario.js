@@ -15,7 +15,8 @@ module.exports = {
     correo: {type: 'string', required: true},
     telefono: {type: 'string', required: true},
     password: {type: 'string', required: true},
-    tipoUsuario: {type: 'string', required: true}//admin,general
+    tipoUsuario: {type: 'string', required: true},//admin,general
+    eventos: {collection: 'Control', via: 'owner' }
 
   },
 
