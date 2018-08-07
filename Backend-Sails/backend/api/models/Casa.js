@@ -10,6 +10,8 @@ module.exports = {
   attributes: {
 
     TipoCasa: {type: 'string', required: true},
+    usuarios: {collection: 'Usuario', via: 'ownerCasa' },
+    ownerAccesoCasa: { model: 'Acceso'}
   },
 
 };

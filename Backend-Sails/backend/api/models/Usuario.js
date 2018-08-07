@@ -16,7 +16,9 @@ module.exports = {
     telefono: {type: 'string', required: true},
     password: {type: 'string', required: true},
     tipoUsuario: {type: 'string', required: true},//admin,general
-    eventos: {collection: 'Control', via: 'owner' }
+    eventos: {collection: 'Control', via: 'ownerUsuario'},
+    ownerCasa: { model: 'Casa'},
+    ownerAccesoUsuario: { model: 'Acceso'}
 
   },
 

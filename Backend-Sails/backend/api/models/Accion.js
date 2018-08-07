@@ -9,7 +9,9 @@ module.exports = {
   datastore: 'myconexion',
   attributes: {
 
-    Tipoaccion: {type: 'string', required: true}
+    Tipoaccion: {type: 'string', required: true},
+    fechas: {collection: 'RegistroEvento', via: 'ownerA' },
+    ownerControlador: { model: 'Controlador'}
 
   },
 

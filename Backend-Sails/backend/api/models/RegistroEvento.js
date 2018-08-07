@@ -9,7 +9,9 @@ module.exports = {
   datastore: 'myconexion',
   attributes: {
 
-    fecha: {type: 'string', required: true}
+    fecha: {type: 'string', required: true},
+    ownerA: { model: 'Accion'},
+    ownerControlador: { model: 'Controlador'}
 
   },
 

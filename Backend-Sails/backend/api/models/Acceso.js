@@ -8,7 +8,9 @@
 module.exports = {
   datastore: 'myconexion',
   attributes: {
-    NivelAcceso: {type: 'string', required: true}
+    NivelAcceso: {type: 'string', required: true},
+    accesosUsuario: {collection: 'Usuario', via: 'ownerAccesoUsuario' },
+    accesosCasa: {collection: 'Casa', via: 'ownerAccesoCasa' }
 
 
   },
